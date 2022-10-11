@@ -460,17 +460,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "8bac98a702e71804af3dacfde41edde4a16076a7bbe889ae61e56e18c5b1c811"
 
 [[package]]
-name = "neon-electron"
-version = "0.1.0"
-dependencies = [
- "neon",
- "num_cpus",
- "rfd",
- "tokio",
- "zip",
-]
-
-[[package]]
 name = "neon-macros"
 version = "0.10.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1093,6 +1082,17 @@ dependencies = [
  "sha1",
  "time",
  "zstd",
+]
+
+[[package]]
+name = "zip-file-extractor"
+version = "0.1.0"
+dependencies = [
+ "neon",
+ "num_cpus",
+ "rfd",
+ "tokio",
+ "zip",
 ]
 
 [[package]]

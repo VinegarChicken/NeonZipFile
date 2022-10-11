@@ -1,7 +1,7 @@
 {
-  "name": "neon-electron",
+  "name": "zip-file-extractor",
   "version": "0.1.0",
-  "description": "Tutorial: How to use Rust inside your Electron application with Neon Bindings. https://medium.com/@cazetto.andre/how-to-use-rust-inside-your-electron-application-using-neon-bindings-64bd83fec316",
+  "description": "Zip file extractor with neon/nodejs",
   "main": "index.node",
   "scripts": {
     "start": "electron ./src/main.js",
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/cazetto/neon-electron.git"
+    "url": "git+ssh://git@github.com/VinegarChicken/NeonZipFile.git"
   },
   "keywords": [
     "NodeJS",
@@ -30,6 +30,7 @@
   },
   "homepage": "https://github.com/cazetto/neon-electron#readme",
   "dependencies": {
+    "bootstrap": "^5.2.2",
     "jquery": "^3.6.1",
     "jsdom": "^20.0.0"
   }

@@ -1,6 +1,7 @@
 const lib = require("../index.node");
 const $ = require("jquery");
 
+
 $("#OpenFile").on('click', function(){
     var files;
     try {
@@ -16,7 +17,6 @@ $("#OpenFile").on('click', function(){
 
 $("#ExtractAll").on('click', function(){
     lib.extract_all();
-    alert("Finished Extracting !");
 });
 
 $(document).on('click', '.file', function(){
