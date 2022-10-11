@@ -91,9 +91,7 @@ impl ZipTest{
     }
     fn extract_all(mut cx: FunctionContext) -> JsResult<JsNumber>{
         unsafe{
-            let index = cx.argument::<JsNumber>(0).unwrap_or(cx.number(0));
-
-            let mut file = zipfile.as_mut().unwrap().by_index(index.value(&mut cx) as usize).unwrap();
+            let mut file = zipfile.as_mut().unwrap().by_index(0).unwrap();
             let dir_path = FileDialog::new()
             .set_directory("/")
             .set_file_name(file.name())
